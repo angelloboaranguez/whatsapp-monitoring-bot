@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    whatsapp-monitoring-bot:
+        container_name: whatsapp-monitoring-bot
+        build:
+            context: .
+            dockerfile: Dockerfile_node
+        volumes:
+            - ./sessions:/home/node/app/sessions
+        environment:
+            TZ: "Europe/Madrid"
+        restart: unless-stopped

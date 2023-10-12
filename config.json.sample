@@ -1,0 +1,16 @@
+{
+  "servicesToCheck": [
+    {
+      "url": "https://www.example.com",
+      "checkInterval": 600000
+    },
+    {
+      "url": "https://www.example.net",
+      "checkInterval": 600000
+    },
+    {
+      "url": "https://www.example.org",
+      "checkInterval": 600000
+    }
+  ]
+}
